@@ -21,7 +21,7 @@ Discomment this section when using external authentication services. You need to
 <section id="loginForm">
     @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
     {
-        @Html.AntiForgeryToken()
+     //   @Html.AntiForgeryToken()
         @Html.ValidationSummary(true)
 
         <fieldset>
