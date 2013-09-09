@@ -1,0 +1,15 @@
+﻿@using Mvc.Mailer
+
+<span>@Resources.Global.Hello</span> @ViewBag.UserName!<br />
+@Resources.Global.NewQuestionEmailMessage
+<h3><a href="@Url.Abs(Url.Action("GetQuestion", "Home", new { id=ViewBag.Question.Id }))">@ViewBag.Question.Title</a></h3>
+<br />
+@Html.Raw(ViewBag.Question.Content)
+<br />
+<br />
+@if (SoFNetAcademia.EmailConfig.IsReceivingEmailSetted)
+{
+    <span>@Resources.Global.EmailAnswerMessage<br /><br /></span>     
+}
+@Resources.Global.Thanks,<br />
+@Resources.Global.PageTitle.

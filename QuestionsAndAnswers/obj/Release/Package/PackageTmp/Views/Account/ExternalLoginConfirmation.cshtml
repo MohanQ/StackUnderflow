@@ -1,0 +1,34 @@
+﻿@model QuestionsAndAnswers.Models.RegisterExternalLoginModel
+@{
+    ViewBag.Title = Resources.Global.Login;
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@string.Format(Resources.Global.ConnectingToProvider, ViewBag.ProviderDisplayName)</h2>
+</hgroup>
+
+@using (Html.BeginForm("ExternalLoginConfirmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>@Resources.Global.ConnectionForm</legend>
+        <p>
+            @Resources.Global.SuccessfulConnectionToThisProvider <strong>@ViewBag.ProviderDisplayName</strong>
+            @Resources.Global.GiveYourLocalName
+        </p>
+        <ol>
+            <li class="name">
+                @Html.Label(Resources.Global.Username)
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </li>
+        </ol>
+        @Html.HiddenFor(m => m.ExternalLoginData)
+        <input type="submit" class="btn btn-info" value=@Resources.Global.Register />
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

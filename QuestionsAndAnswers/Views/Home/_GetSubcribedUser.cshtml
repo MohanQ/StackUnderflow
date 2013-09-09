@@ -1,0 +1,45 @@
+﻿@model IEnumerable<QuestionsAndAnswers.Models.UserProfile>
+
+@{
+    ViewBag.Title = "GetSubcribedUser";
+}
+
+<h2>@Resources.Global.GetSubUserHead @ViewBag.tagname</h2>
+
+
+<table>
+    <tr>
+        <th>
+            @Resources.Global.Username
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+           Adatok
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @if(item.Email!=null)
+            {
+                Html.DisplayFor(modelItem => item.Email);
+            }
+            else
+            {
+                <label>@Resources.Global.NotYetEmail</label>
+            }
+        </td>     
+        <td>
+            @Html.ActionLink(Resources.Global.Profil, "GetUser", new { id=item.UserId })         
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = Resources.Global.UnsuccessfulQuestionAsk;
+}
+
+<h2>@Resources.Global.YouCantQuestion</h2>
+
+
+@Resources.Global.ToQuestionYouNeedToLogIn
+<br />
+@Html.ActionLink(Resources.Global.Login, "Login", "Account")
+<br />
+<br />
+@Resources.Global.PleaseRegisterToQuestion
+@Html.ActionLink(Resources.Global.Register, "Register", "Account")
+<br />
+<br />
+@Html.ActionLink(Resources.Global.BackToHomePage, "Index", "Home")
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(function () {
+            $("#loginurl").addClass("active");
+        });
+    </script>
+}

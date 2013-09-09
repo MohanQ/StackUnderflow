@@ -1,0 +1,24 @@
+﻿@model List<QuestionsAndAnswers.ControllersModel.TagListModel>
+
+@{
+    ViewBag.Title = Resources.Global.Tags;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Resources.Global.Tags</h2>
+@foreach (var item in Model)
+{
+    <p>@Html.ActionLink(item.Tag.Name, "Tag", "Home", new { id = item.Tag.Id, info=System.Text.RegularExpressions.Regex.Replace(item.Tag.Name.Replace(" ","-"), "[^\\p{L}0-9_-]","") }, null) - @item.Questions @Resources.Global.question - @Ajax.ActionLink(item.SubcribedUser + " " + Resources.Global.SubscribedUser, "GetSubcribedUser", new { tagid = item.Tag.Id }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "details_id" })</p>
+}
+
+<div id="details_id">
+
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#alltagsurl").addClass("active");
+        });
+    </script>
+}

@@ -1,0 +1,46 @@
+﻿@model  QuestionsAndAnswers.ControllersModel.UserControllerModel
+@using QuestionsAndAnswers.Helpers
+@{
+    ViewBag.Title = Model.UserProfile.UserName;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.UserProfile.UserName</h2>
+<h4>@Resources.Global.Reputation: @Model.UserRating</h4>
+<h4>@Resources.Global.SubscribedKeyword</h4>
+<div id="subcribedtags">
+    <!-- There isn't subscribed tag -->
+    @if (Model.SubcribedTag.Count == 0)
+    {
+        <label>@Resources.Global.NotYetSubscribed</label>
+    }
+    else
+    {
+        foreach (var item in Model.SubcribedTag)
+        {
+        <a href="/Home/Tag/@item.Id">@item.Name</a><br />
+        }
+        <!-- In the case there are all subscribed tags on the new page -->
+        if (ViewBag.CountTag > 6)
+        {
+            <b><a href="#" data-reveal-id="myModal">@Resources.Global.AllSubscribedTags</a></b>   
+        }
+    }
+</div>
+
+<div class="row">
+    <div class="span6">
+<div class="row">
+        @{Html.RenderAction("GetAskedQuestionsByUser", "Home", new { id = Model.UserProfile.UserId, askedquestionpage = ViewBag.AskedQuestionPage, answeredquestionpage = ViewBag.AnsweredQuestionPage });}
+    </div>
+        </div>
+    <div class="span6">
+        @{Html.RenderAction("GetAnsweredQuestionsByUser", "Home", new { id = Model.UserProfile.UserId, askedquestionpage = ViewBag.AskedQuestionPage, answeredquestionpage = ViewBag.AnsweredQuestionPage });}
+    </div>
+</div>
+
+<!--Jquery Reveal -->
+<div id="myModal" class="reveal-modal">
+    @Html.RenderAllTags(Model.UserProfile.UserId) 
+    <a class="close-reveal-modal">&#215;</a>
+</div>

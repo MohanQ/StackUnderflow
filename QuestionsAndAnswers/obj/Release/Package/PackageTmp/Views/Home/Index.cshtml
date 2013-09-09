@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "";
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
+}
+
+@{Html.RenderAction("QuestionsToUser", "Home", true);}
+
+<div class="span8">
+    <h3>@Resources.Global.LatestQuestions</h3>
+</div>
+@{Html.RenderAction("IndexQuestions", "Home", true);}
+
+
+<div class="span8">
+    <h4>@Html.ActionLink(Resources.Global.LinkTextToAllQuestionsPage, "GetAllQuestions", "Home")</h4>
+</div>
+
+

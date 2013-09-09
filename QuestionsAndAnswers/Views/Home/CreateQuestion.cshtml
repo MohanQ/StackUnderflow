@@ -1,0 +1,63 @@
+﻿@model QuestionsAndAnswers.Models.Question
+
+@{
+    ViewBag.Title = Resources.Global.CreateQuestion;
+}
+
+<h2>@Resources.Global.CreateQuestion</h2>
+
+@using (Html.BeginForm("CreateQuestion", "Home", FormMethod.Post, new { onsubmit = "return validate()" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>@Resources.Global.question</legend>
+
+        <label>@Resources.Global.Title</label>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Title)
+            <br />
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+        <div id="titlevalidate">
+        </div>
+
+       <label>@Resources.Global.Content</label>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Content, new { @class = "hidden" })
+            <textarea id="content_editor"></textarea>        
+        </div>
+        <br />
+         @Html.ValidationMessageFor(model => model.Content)
+        <br />
+        <label>@Resources.Global.Tags - @Resources.Global.SeparetedWithCommas</label>
+        @*TextBox for Tags*@
+        <input type="text" name="tags" value="" id="tags" />
+        <div id="tagvalidate">
+        </div>
+        <div class="row">
+        <div class="span1">
+        <p>
+            <input type="submit" class="btn" id="form_submit" value=@Resources.Global.Save />
+        </p>
+            </div>
+            </div>
+    </fieldset>
+}
+<!-- Hidden fields for scripts, because we are using in scriptfile Resources's file -->
+<input type="hidden" id="tv1" value="@Resources.Global.Tv1" />
+<input type="hidden" id="tv2" value="@Resources.Global.Tv2" />
+<input type="hidden" id="tv3" value="@Resources.Global.Tv3"/>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/createquestion.js")
+
+    <script type="text/javascript">
+        $(function () {
+            $("#createquestionurl").addClass("active");
+        });
+    </script>
+}

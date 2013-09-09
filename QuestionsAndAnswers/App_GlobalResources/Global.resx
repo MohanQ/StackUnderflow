@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddExternalLogin" xml:space="preserve">
+    <value>Add External Login</value>
+  </data>
+  <data name="AllQuestions" xml:space="preserve">
+    <value>All Questions</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="Answered" xml:space="preserve">
+    <value>Answered</value>
+  </data>
+  <data name="AnswerForm" xml:space="preserve">
+    <value>Answer Form</value>
+  </data>
+  <data name="Answers" xml:space="preserve">
+    <value>Answers</value>
+  </data>
+  <data name="AskAQuestion" xml:space="preserve">
+    <value>Ask!</value>
+  </data>
+  <data name="Asked" xml:space="preserve">
+    <value>Asked</value>
+  </data>
+  <data name="BackToHomePage" xml:space="preserve">
+    <value>BackToHomePage</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePasswordForm" xml:space="preserve">
+    <value>Password Change Form</value>
+  </data>
+  <data name="ConnectingToProvider" xml:space="preserve">
+    <value>Connecting to your {0} profile.</value>
+  </data>
+  <data name="ConnectionForm" xml:space="preserve">
+    <value>Connection Form</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="CreateNewProfile" xml:space="preserve">
+    <value>Create new profile</value>
+  </data>
+  <data name="CreateQuestion" xml:space="preserve">
+    <value>Ask a question</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditAnswer" xml:space="preserve">
+    <value>Edit an answer</value>
+  </data>
+  <data name="EditMyProfile" xml:space="preserve">
+    <value>Edit my profile</value>
+  </data>
+  <data name="EditQuestion" xml:space="preserve">
+    <value>Edit a question</value>
+  </data>
+  <data name="ExternalLogin" xml:space="preserve">
+    <value>External login</value>
+  </data>
+  <data name="FailedConnection" xml:space="preserve">
+    <value>Failed connection</value>
+  </data>
+  <data name="FailedToConnectToTheService" xml:space="preserve">
+    <value>Failed to connect to the service.</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="GiveYourLocalName" xml:space="preserve">
+    <value>Give a username for your local account.</value>
+  </data>
+  <data name="Latest" xml:space="preserve">
+    <value>Latest</value>
+  </data>
+  <data name="LatestQuestions" xml:space="preserve">
+    <value>Latest questions</value>
+  </data>
+  <data name="LinkTextToAllQuestionsPage" xml:space="preserve">
+    <value>Complete list of questions</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginForm" xml:space="preserve">
+    <value>Login form</value>
+  </data>
+  <data name="LoginWithLocalProfile" xml:space="preserve">
+    <value>Login with your local account</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>My profile</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Questions and Answers</value>
+  </data>
+  <data name="PleaseRegisterToQuestion" xml:space="preserve">
+    <value>If you don’t already have an account, please register.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>question</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Questions</value>
+  </data>
+  <data name="QuestionsCanNotBeFound" xml:space="preserve">
+    <value>Questionc can't be found.</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterForm" xml:space="preserve">
+    <value>Register form</value>
+  </data>
+  <data name="RegisterIfYouHaveNotProfile" xml:space="preserve">
+    <value>Register, if you don't have an account.</value>
+  </data>
+  <data name="RegistredExternalLogins" xml:space="preserve">
+    <value>Registred external accounts.</value>
+  </data>
+  <data name="RelatedQuestions" xml:space="preserve">
+    <value>Related questions</value>
+  </data>
+  <data name="RemoveExternalLogin" xml:space="preserve">
+    <value>Remove external account</value>
+  </data>
+  <data name="Reputation" xml:space="preserve">
+    <value>Reputation</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SeparetedWithCommas" xml:space="preserve">
+    <value>Separeted with commas</value>
+  </data>
+  <data name="SuccessfulConnectionToThisProvider" xml:space="preserve">
+    <value>Successful connecion happend to this provider.</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="TagsHeadline" xml:space="preserve">
+    <value>Latest questions with {0} tag</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ToQuestionYouNeedToLogIn" xml:space="preserve">
+    <value>To ask a question, you have to login.</value>
+  </data>
+  <data name="UnsuccessfulQuestionAsk" xml:space="preserve">
+    <value>Failed to ask the question</value>
+  </data>
+  <data name="UserAnsweredQuestions" xml:space="preserve">
+    <value>Questions which answered by user.</value>
+  </data>
+  <data name="UserMenu" xml:space="preserve">
+    <value>User menu</value>
+  </data>
+  <data name="UserQuestions" xml:space="preserve">
+    <value>Questions by user.</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Vote" xml:space="preserve">
+    <value>Votes</value>
+  </data>
+  <data name="YouAreLoggedInWithThisUsername" xml:space="preserve">
+    <value>You are logged in with this username:</value>
+  </data>
+  <data name="YouCantQuestion" xml:space="preserve">
+    <value>Unfortunately, you can't ask a question.</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="hours" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="LatestUnansweredQuestionsWithYourFavoriteSpeciality" xml:space="preserve">
+    <value>Latest unanswered questions in your speciality.</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="Now" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="seconds" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="YouAlreadyVotedForThisAnswer" xml:space="preserve">
+    <value>You already voted for this answer.</value>
+  </data>
+  <data name="YouAlreadyVotedForThisQuestion" xml:space="preserve">
+    <value>You already voted for this question.</value>
+  </data>
+  <data name="YouCantVoteForYourOwnAnswer" xml:space="preserve">
+    <value>You can't vote for your own answer.</value>
+  </data>
+  <data name="YouCantVoteForYourOwnQuestion" xml:space="preserve">
+    <value>You can't vote for your own question</value>
+  </data>
+  <data name="YouHaveToGiveContentForAnAnswer" xml:space="preserve">
+    <value>You have to give content for an answer.</value>
+  </data>
+  <data name="YouHaveToGiveContentForAQuestion" xml:space="preserve">
+    <value>You have to give content for a question.</value>
+  </data>
+  <data name="YouHaveToGiveProperLengthContentForAnAnswer" xml:space="preserve">
+    <value>You have to give at least 25 character long, at most 25000 character long answer.</value>
+  </data>
+  <data name="YouHaveToGiveProperLengthContentForAQuestion" xml:space="preserve">
+    <value>You have to give at least 25 character long, at most 25000 character long question</value>
+  </data>
+  <data name="YouHaveToGiveProperLengthTitleForAQuestion" xml:space="preserve">
+    <value>You have to give at least 12character long, at most 120 character long title.</value>
+  </data>
+  <data name="YouHaveToGiveTitleForAQuestion" xml:space="preserve">
+    <value>You have to giva a title for the question.</value>
+  </data>
+  <data name="YouHaveToLoginBeforeVote" xml:space="preserve">
+    <value>You have to login before vote.</value>
+  </data>
+  <data name="ExternalProfileIsDeleted" xml:space="preserve">
+    <value>External profile has deleted.</value>
+  </data>
+  <data name="GivenUsernameOrPasswordIsIncorrect" xml:space="preserve">
+    <value>Given username or password is incorrect.</value>
+  </data>
+  <data name="IncorrectCurrentPasswordOrIncorrectNewPasswordHasTyped" xml:space="preserve">
+    <value>Incorrect password or incorrect new password has typed.</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Remember me?</value>
+  </data>
+  <data name="UsernameIsReserved" xml:space="preserve">
+    <value>Username is reserved, please pick another.</value>
+  </data>
+  <data name="YourPasswordIsChanged" xml:space="preserve">
+    <value>Your password has changed.</value>
+  </data>
+  <data name="YourPasswordIsSetted" xml:space="preserve">
+    <value>Your password has setted.</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Jelszó megerősítése</value>
+  </data>
+  <data name="ConfirmPasswordNotEqualToNewPassword" xml:space="preserve">
+    <value>Confirm password not equal to new password.</value>
+  </data>
+  <data name="FailedRegistration" xml:space="preserve">
+    <value>Failed registration happened.</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="NewPasswordLengthNotProper" xml:space="preserve">
+    <value>Password has to contain at least {2} character.</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Old password</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RequiredConfirmPassword" xml:space="preserve">
+    <value>Confirm password is required.</value>
+  </data>
+  <data name="RequiredNewPassword" xml:space="preserve">
+    <value>New password is required.</value>
+  </data>
+  <data name="RequiredOldPassword" xml:space="preserve">
+    <value>Old password is required.</value>
+  </data>
+  <data name="RequiredPassword" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="RequiredUsername" xml:space="preserve">
+    <value>Username is required.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="OrderByReversedTime" xml:space="preserve">
+    <value>Latest first</value>
+  </data>
+  <data name="OrderByTime" xml:space="preserve">
+    <value>Oldest first</value>
+  </data>
+  <data name="OrderByVotes" xml:space="preserve">
+    <value>Order by votes</value>
+  </data>
+  <data name="NewAnswerArrived" xml:space="preserve">
+    <value>New answer arrived, click here to show this!</value>
+  </data>
+  <data name="AllSubscribedTags" xml:space="preserve">
+    <value>The all subscribed tags..</value>
+  </data>
+  <data name="GetAllTagToOneUserHead" xml:space="preserve">
+    <value>The all subscribed tags of the user:</value>
+  </data>
+  <data name="GetSubUserHead" xml:space="preserve">
+    <value>The following tags subscribed users:</value>
+  </data>
+  <data name="NotYetEmail" xml:space="preserve">
+    <value>There isn't email address yet</value>
+  </data>
+  <data name="NotYetSubscribed" xml:space="preserve">
+    <value>You not subscribed for tags.</value>
+  </data>
+  <data name="Profil" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="SubscribedKeyword" xml:space="preserve">
+    <value>Subscribed tags:</value>
+  </data>
+  <data name="SubscribedUser" xml:space="preserve">
+    <value>Subscribed user</value>
+  </data>
+  <data name="Tv1" xml:space="preserve">
+    <value>You have to give tags for a question.</value>
+  </data>
+  <data name="Tv2" xml:space="preserve">
+    <value>You can give maximum 5 tags.</value>
+  </data>
+  <data name="Tv3" xml:space="preserve">
+    <value>You have to give at most 25 charachter long tag.</value>
+  </data>
+  <data name="BubbleForTagsSubscribe" xml:space="preserve">
+    <value>You can subscribe with "*" charachter for more tags.  &lt;!br&gt; As follows: &lt;br/&gt;1. sql* &lt;br/&gt; 2. *sql &lt;br/&gt; 3. *sql*</value>
+  </data>
+  <data name="CheckSubscribe" xml:space="preserve">
+    <value>Check the tags or check the login!</value>
+  </data>
+  <data name="EmailNotValid" xml:space="preserve">
+    <value>The email is not valid.</value>
+  </data>
+  <data name="ErrorInSubscribe" xml:space="preserve">
+    <value>Sorry, an error occurred while processing.</value>
+  </data>
+  <data name="RequiredEmail" xml:space="preserve">
+    <value>Email address is required.</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="SubscribedSuccess" xml:space="preserve">
+    <value>The tag registration is success.</value>
+  </data>
+  <data name="ThisSubscribeTags" xml:space="preserve">
+    <value>You subscribe these tags:</value>
+  </data>
+  <data name="EmailHasSent" xml:space="preserve">
+    <value>Email has sent</value>
+  </data>
+  <data name="EmailHasSentVerifyYourAddress" xml:space="preserve">
+    <value>We have sent the email to your email address. To verify your address, please look the message.</value>
+  </data>
+  <data name="EmailSetting" xml:space="preserve">
+    <value>Email setting</value>
+  </data>
+  <data name="EmailReg" xml:space="preserve">
+    <value>Email Registration</value>
+  </data>
+  <data name="NoEmail" xml:space="preserve">
+    <value>You haven't email address. You have to register email!</value>
+  </data>
+  <data name="EmailAnswerMessage" xml:space="preserve">
+    <value>If you want to answer this question in email, you should reply to this email and write your answer into the reply.</value>
+  </data>
+  <data name="EmailVerificationMessage" xml:space="preserve">
+    <value>Somebody gave your email address to our website. If it was you, please click the following url:</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="NewAnswerEmailMessage" xml:space="preserve">
+    <value>New answer came for one of your subscripted tags. Here you can see the question:</value>
+  </data>
+  <data name="NewQuestionEmailMessage" xml:space="preserve">
+    <value>New question came for one of your subscripted tags. Here you can see the question:</value>
+  </data>
+  <data name="SuccessfulEmailVerification" xml:space="preserve">
+    <value>Successful email verification</value>
+  </data>
+  <data name="SuccessfulEmailVerificationMessage" xml:space="preserve">
+    <value>Your email verification was successful, welcome to the page!</value>
+  </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Thanks</value>
+  </data>
+  <data name="UnsuccessfulEmailVerification" xml:space="preserve">
+    <value>Unsuccessful email verification</value>
+  </data>
+  <data name="UnsuccessfulEmailVerificationMessage" xml:space="preserve">
+    <value>Your email verification was unsuccessful, please try again!</value>
+  </data>
+  <data name="Verification" xml:space="preserve">
+    <value>Verification</value>
+  </data>
+  <data name="ChangeEmail" xml:space="preserve">
+    <value>Change email</value>
+  </data>
+  <data name="EmailVerifySubject" xml:space="preserve">
+    <value>Please, verify your email adress</value>
+  </data>
+  <data name="FailedAnswerGoodbye" xml:space="preserve">
+    <value>We are sorry for the inconveniences</value>
+  </data>
+  <data name="FailedAnswerMessage" xml:space="preserve">
+    <value>Unfortunately we can not process your answer. You may use unsupported email provider or you may have delete the id from the subject.</value>
+  </data>
+  <data name="FailedEmailReply" xml:space="preserve">
+    <value>Failed email reply</value>
+  </data>
+  <data name="NewAnswerSubject" xml:space="preserve">
+    <value>New answer came for your subscripted tag</value>
+  </data>
+  <data name="NewQuestionSubject" xml:space="preserve">
+    <value>New question came for your subscripted tag</value>
+  </data>
+  <data name="YouMustVerifyEmail" xml:space="preserve">
+    <value>YouMustVerifyEmail</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Error404Message" xml:space="preserve">
+    <value>We couldn't find the page you requested.</value>
+  </data>
+  <data name="Error404Title" xml:space="preserve">
+    <value>Page not found</value>
+  </data>
+  <data name="ErrorUnknownMessage" xml:space="preserve">
+    <value>An error occurred while processing your request.</value>
+  </data>
+  <data name="ChangeEmailOrAddNewEmail" xml:space="preserve">
+    <value>Change email or add new email</value>
+  </data>
+  <data name="EditEmail" xml:space="preserve">
+    <value>Edit email</value>
+  </data>
+</root>

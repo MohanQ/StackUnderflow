@@ -1,0 +1,152 @@
+﻿@model QuestionsAndAnswers.ControllersModel.GetQuestionModel
+@using QuestionsAndAnswers
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = Model.CurrentQuestion.Title;
+}
+
+<div class="row">
+    <div class="span9">
+        @*  Question's title  *@
+        <h2>@Model.CurrentQuestion.Title</h2>
+        <input type="hidden" id="questionid" value=@Model.CurrentQuestion.Id />
+
+        @*  Warning block, which show if an invalid vote happened *@
+        <div class="alert" id="questionwarningdiv" hidden>
+            @*  Warning block's close button  *@
+            <button type="button" class="close">&times;</button>
+            <span id="questionwarning"></span>
+        </div>
+
+        @*  Questions's block  *@
+        <div class="row">
+            <ul class="span2 nav nav-pills">
+                <li>
+                    <span class="voteblock">
+                        <span class="votenumber">
+                            @if (Model.Vote > 0)
+                            {
+                                <span id="questionvote">+@Model.Vote</span>
+                            }
+                            else
+                            {
+                                <span id="questionvote">@Model.Vote</span>
+                            }
+                        </span>
+                        <br />
+                        @Resources.Global.Vote
+                    </span>
+                </li>
+                <li>
+                    <div class="btn-group btn-group-vertical vote-button-group">
+                        <button class="btn btn-success votebutton" type="button" id="questionplus">
+                            +1
+                        </button>
+                        <button class="btn btn-danger votebutton" type="button" id="questionminus">
+                            -1
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <div class="span7">
+                <div class="row">
+                    @*  Question's content  *@
+                    @Html.Raw(Model.CurrentQuestion.Content)
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        @*  Question's tags  *@
+                        @Resources.Global.Tags
+                        @foreach (var tag in Model.QuestionTags)
+                        {
+                            <span class="tag">@Html.ActionLink(tag.Name, "Tag", "Home", new { id = tag.Id, info = System.Text.RegularExpressions.Regex.Replace(tag.Name.Replace(" ", "-"), "[^\\p{L}0-9_-]", "") }, null) </span>
+                        }
+                        <br />
+                        @*  Edit question button, only shown for the question's author.  *@
+                        @{
+                       
+                            if (Request.IsAuthenticated)
+                            {
+                                if (WebSecurity.CurrentUserId == Model.CurrentQuestion.UserId)
+                                {
+                            <br />
+                        
+                                    using (Html.BeginForm("EditQuestion", "Home", FormMethod.Get))
+                                    {
+                            @Html.Hidden("actId", Model.CurrentQuestion.Id)
+                            <input type="submit" class="btn" value=@Resources.Global.Edit>
+                                    }
+
+                                }
+                            }
+                        }
+                    </div>
+                    <div class="span3 pull-right">
+                        @*  Question's author  *@
+                        <span class="pull-right">@Resources.Global.Asked - @Html.ActionLink(Model.QuestionUser.UserName, "GetUser", "Home", new { id = Model.QuestionUser.UserId, info = System.Text.RegularExpressions.Regex.Replace(Model.QuestionUser.UserName.Replace(" ", "-"), "[^\\p{L}0-9_-]", "") }, null)</span>
+                        <br />
+                        <span class="pull-right">@MyHelpers.ElapsedTime(Model.CurrentQuestion.Date)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div id="answersheader" hidden>        
+<h3>@Resources.Global.Answers</h3>
+<ul class="nav nav-tabs">
+        <li><a href="javascript:void(0)" id="orderbyvotes">@Resources.Global.OrderByVotes</a></li>
+        <li><a href="javascript:void(0)" id="orderbyreversedtime">@Resources.Global.OrderByReversedTime</a></li>
+        <li><a href="javascript:void(0)" id="orderbytime">@Resources.Global.OrderByTime</a></li>
+       
+</ul>
+        <div id="answers"></div>
+
+        <div class="alert alert-info" id="newanswer" hidden>
+            <span id="newanswerwarning"><b>@Resources.Global.NewAnswerArrived</b></span>
+        </div>
+    
+    </div>
+        @*  If the user is logged in, he can create an answer *@
+        @if (Request.IsAuthenticated)
+        {
+            using (Ajax.BeginForm("AddAnswer", "Home", new AjaxOptions { }, new { id = "formid" }))
+            {
+    
+            <input type="hidden" name="questionID" value="@Model.CurrentQuestion.Id" />
+            
+            <br />
+            <h3>@Resources.Global.AnswerForm</h3>
+            <br />  
+            <div class="hidden">
+                @Html.TextAreaFor(x => x.ActualAnswer.Content)
+
+            </div>
+            <textarea id="answer_editor"></textarea>              
+            
+            <br />
+            @Html.ValidationMessageFor(x => x.ActualAnswer.Content)
+            <br />
+            <input type="submit" id="form_submit" value="OK" class="btn" />
+            }
+        }
+    </div>
+
+    <div class="span3">
+        <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+                <li class="nav-header">@Resources.Global.RelatedQuestions</li>
+                @{Html.RenderAction("GetRelatedQuestions", "Home", new { questionid = Model.CurrentQuestion.Id });}
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+@section scripts{
+    @Scripts.Render("~/Scripts/tiny_mce/tiny_mce.js")
+    @Scripts.Render("~/Scripts/getquestion.js")
+
+}

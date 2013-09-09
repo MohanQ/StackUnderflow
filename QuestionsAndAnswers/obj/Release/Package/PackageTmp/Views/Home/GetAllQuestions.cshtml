@@ -1,0 +1,35 @@
+﻿@model List<QuestionsAndAnswers.Models.Question>
+
+@{
+    ViewBag.Title = Resources.Global.AllQuestions;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <div class="span8">
+        <h2>@Resources.Global.AllQuestions</h2>
+    </div>
+@using QuestionsAndAnswers;
+@using PagedList;
+@using PagedList.Mvc;
+@using QuestionsAndAnswers.Models;
+
+@{Html.RenderAction("GetAllQuestionsResult", "Home", new { page = ViewBag.Page, questions = ViewBag.OnePageOfProducts });}
+
+@if (ViewBag.MorePage != 0)
+{
+    <div class="row">
+        <div class="span8">
+
+            @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("GetAllQuestions", new { page = page }), new PagedListRenderOptions { LinkToFirstPageFormat = "<< " + Resources.Global.First, LinkToPreviousPageFormat = "< " + Resources.Global.Previous, LinkToNextPageFormat = Resources.Global.Next + " >", LinkToLastPageFormat = Resources.Global.Latest + " >>" })&nbsp;
+        </div>
+    </div>
+}
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#allquestionsurl").addClass("active");
+        });
+    </script>
+}
