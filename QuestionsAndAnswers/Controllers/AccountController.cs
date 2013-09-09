@@ -75,7 +75,6 @@ namespace QuestionsAndAnswers.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        [ValidateAntiForgeryToken]
         public ActionResult Register(RegisterModel model)
         {
             if (ModelState.IsValid)
@@ -101,7 +100,7 @@ namespace QuestionsAndAnswers.Controllers
         // POST: /Account/Disassociate
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public ActionResult Disassociate(string provider, string providerUserId)
         {
             string ownerAccount = OAuthWebSecurity.GetUserName(provider, providerUserId);
