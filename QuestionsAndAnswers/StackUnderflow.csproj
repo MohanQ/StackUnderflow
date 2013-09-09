@@ -377,6 +377,7 @@
     <None Include="Properties\PublishProfiles\tudastar - FTP %2810%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - FTP %2811%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - FTP %2812%29.pubxml" />
+    <None Include="Properties\PublishProfiles\tudastar - FTP %2813%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - FTP %284%29.pubxml" />
@@ -389,6 +390,7 @@
     <None Include="Properties\PublishProfiles\tudastar - Web Deploy %2810%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - Web Deploy %2811%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - Web Deploy %2812%29.pubxml" />
+    <None Include="Properties\PublishProfiles\tudastar - Web Deploy %2813%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\tudastar - Web Deploy %284%29.pubxml" />
