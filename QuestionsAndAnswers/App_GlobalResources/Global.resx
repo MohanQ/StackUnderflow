@@ -573,4 +573,7 @@
   <data name="EditEmail" xml:space="preserve">
     <value>Edit Email</value>
   </data>
+  <data name="SubscribeButton" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
 </root>

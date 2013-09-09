@@ -136,7 +136,7 @@
     <value>Válaszok</value>
   </data>
   <data name="AskAQuestion" xml:space="preserve">
-    <value>Kérdezz</value>
+    <value>Kérdezz!</value>
   </data>
   <data name="Asked" xml:space="preserve">
     <value>Kérdezte</value>
@@ -460,7 +460,7 @@
     <value>Egy tag hossza nem haladhatja meg a 25 karaktert! Megértésedet köszönjük!</value>
   </data>
   <data name="BubbleForTagsSubscribe" xml:space="preserve">
-    <value>A "*" karakterrel tud egyszerre több kulcsszóra feliratkozni. &lt;br/&gt; A következőképp: &lt;br/&gt;1. sql* &lt;br/&gt; 2. *sql &lt;br/&gt; 3. *sql*</value>
+    <value>A "*" karakterrel lehet egyszerre több hasonló kulcsszóra feliratkozni. &lt;br/&gt; Például: &lt;br/&gt;1. sql* &lt;br/&gt; 2. *sql &lt;br/&gt; 3. *sql*</value>
   </data>
   <data name="CheckSubscribe" xml:space="preserve">
     <value>Ellenőrizze, hogy létező kulcsszavat adott-e meg, vagy be van-e jelentkezve a portálra!</value>
@@ -475,7 +475,7 @@
     <value>Email cím nélkül nem tudunk értesítést küldeni!</value>
   </data>
   <data name="Subscribe" xml:space="preserve">
-    <value>Feliratkozás</value>
+    <value>Feliratkozás kulcsszóra</value>
   </data>
   <data name="SubscribedSuccess" xml:space="preserve">
     <value>A feliratkozás sikeres volt.</value>
@@ -572,5 +572,8 @@
   </data>
   <data name="EditEmail" xml:space="preserve">
     <value>Email szerkesztése</value>
+  </data>
+  <data name="SubscribeButton" xml:space="preserve">
+    <value>Feliratkozás</value>
   </data>
 </root>

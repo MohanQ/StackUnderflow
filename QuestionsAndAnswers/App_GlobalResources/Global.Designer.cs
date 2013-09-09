@@ -1051,6 +1051,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Subscribe.
+        /// </summary>
+        internal static string SubscribeButton {
+            get {
+                return ResourceManager.GetString("SubscribeButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Subscribed tags:.
         /// </summary>
         internal static string SubscribedKeyword {
