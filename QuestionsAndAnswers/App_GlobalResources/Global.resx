@@ -223,7 +223,7 @@
     <value>Questions and Answers</value>
   </data>
   <data name="PleaseRegisterToQuestion" xml:space="preserve">
-    <value>If you don’t already have an account, please register.</value>
+    <value>Register, if you don't have an account.</value>
   </data>
   <data name="Previous" xml:space="preserve">
     <value>Previous</value>
@@ -262,7 +262,7 @@
     <value>Save</value>
   </data>
   <data name="SeparetedWithCommas" xml:space="preserve">
-    <value>Separeted with commas</value>
+    <value>Separeted by commas</value>
   </data>
   <data name="SuccessfulConnectionToThisProvider" xml:space="preserve">
     <value>Successful connecion happend to this provider.</value>
@@ -283,7 +283,7 @@
     <value>Failed to ask the question</value>
   </data>
   <data name="UserAnsweredQuestions" xml:space="preserve">
-    <value>Questions which answered by user.</value>
+    <value>Questions answered by user.</value>
   </data>
   <data name="UserMenu" xml:space="preserve">
     <value>User menu</value>
@@ -322,10 +322,10 @@
     <value>seconds</value>
   </data>
   <data name="YouAlreadyVotedForThisAnswer" xml:space="preserve">
-    <value>You already voted for this answer.</value>
+    <value>You have already voted for this answer.</value>
   </data>
   <data name="YouAlreadyVotedForThisQuestion" xml:space="preserve">
-    <value>You already voted for this question.</value>
+    <value>You have already voted for this question.</value>
   </data>
   <data name="YouCantVoteForYourOwnAnswer" xml:space="preserve">
     <value>You can't vote for your own answer.</value>
@@ -364,7 +364,7 @@
     <value>Incorrect password or incorrect new password has been typed.</value>
   </data>
   <data name="RememberMe" xml:space="preserve">
-    <value>Remember me?</value>
+    <value>Remember me</value>
   </data>
   <data name="UsernameIsReserved" xml:space="preserve">
     <value>Username is reserved, please pick another.</value>
@@ -388,7 +388,7 @@
     <value>New password</value>
   </data>
   <data name="NewPasswordLengthNotProper" xml:space="preserve">
-    <value>Password has to contain at least {2} character.</value>
+    <value>Password has to contain at least {2} character(s).</value>
   </data>
   <data name="OldPassword" xml:space="preserve">
     <value>Old password</value>
@@ -436,10 +436,10 @@
     <value>The following tags has been subscribed by users:</value>
   </data>
   <data name="NotYetEmail" xml:space="preserve">
-    <value>There isn't email address yet</value>
+    <value>We don't have your email address in our system.</value>
   </data>
   <data name="NotYetSubscribed" xml:space="preserve">
-    <value>You not subscribed for tags.</value>
+    <value>You have no subscribed tags.</value>
   </data>
   <data name="Profil" xml:space="preserve">
     <value>Profil</value>
@@ -451,13 +451,13 @@
     <value>Subscribed user</value>
   </data>
   <data name="Tv1" xml:space="preserve">
-    <value>You have to give tags for a question.</value>
+    <value>You have to enter tags for a question.</value>
   </data>
   <data name="Tv2" xml:space="preserve">
-    <value>You can give maximum 5 tags.</value>
+    <value>You can enter no more than 5 tags.</value>
   </data>
   <data name="Tv3" xml:space="preserve">
-    <value>You have to give at most 25 charachter long tag.</value>
+    <value>The maximum length of a tag is 25 charachters.</value>
   </data>
   <data name="BubbleForTagsSubscribe" xml:space="preserve">
     <value>You can subscribe to similar tags by using "*" charachter  &lt;br/&gt; for example: &lt;br/&gt;1. sql* &lt;br/&gt; 2. *sql &lt;br/&gt; 3. *sql*</value>
@@ -478,10 +478,10 @@
     <value>Subscribe</value>
   </data>
   <data name="SubscribedSuccess" xml:space="preserve">
-    <value>The tag registration is success.</value>
+    <value>You have successfully subscribed to the tag.</value>
   </data>
   <data name="ThisSubscribeTags" xml:space="preserve">
-    <value>You subscribe these tags:</value>
+    <value>You have subscribed to these tags:</value>
   </data>
   <data name="EmailHasSent" xml:space="preserve">
     <value>Email message has been sent.</value>
@@ -496,7 +496,7 @@
     <value>Email Registration</value>
   </data>
   <data name="NoEmail" xml:space="preserve">
-    <value>You haven't email address. You have to register email!</value>
+    <value>We don't have your email address in our system. Please enter your email address.</value>
   </data>
   <data name="EmailAnswerMessage" xml:space="preserve">
     <value>If you want to answer this question in email, you should reply to this email and write your answer into the reply.</value>
@@ -511,10 +511,10 @@
     <value>New answer came for one of your subscripted tags. Here you can see the question:</value>
   </data>
   <data name="NewQuestionEmailMessage" xml:space="preserve">
-    <value>New question came for one of your subscripted tags. Here you can see the question:</value>
+    <value>There is a new question for one of your subscripted tags. Here you are:</value>
   </data>
   <data name="SuccessfulEmailVerification" xml:space="preserve">
-    <value>Successful email verification</value>
+    <value>Email verification was successful</value>
   </data>
   <data name="SuccessfulEmailVerificationMessage" xml:space="preserve">
     <value>Your email verification was successful, welcome to the page!</value>
@@ -550,7 +550,7 @@
     <value>New answer came for your subscripted tag</value>
   </data>
   <data name="NewQuestionSubject" xml:space="preserve">
-    <value>New question came for your subscripted tag</value>
+    <value>There is a new question for your subscripted tag</value>
   </data>
   <data name="YouMustVerifyEmail" xml:space="preserve">
     <value>YouMustVerifyEmail</value>
