@@ -37,19 +37,19 @@ namespace QuestionsAndAnswers.Migrations
                 .ForeignKey("dbo.UserProfile", t => t.UserId)
                 .Index(t => t.UserId);
 
-         /*   CreateTable(
-                "dbo.UserProfile",
-                c => new
-                {
-                    UserId = c.Int(nullable: false, identity: true),
-                    UserName = c.String(nullable: false, maxLength: 120),
-                    Email = c.String(),
-                    IsVerified = c.Boolean(),
-                })
-                .PrimaryKey(t => t.UserId);*/
+            CreateTable(
+                   "dbo.UserProfile",
+                   c => new
+                   {
+                       UserId = c.Int(nullable: false, identity: true),
+                       UserName = c.String(nullable: false, maxLength: 120),
+                       Email = c.String(),
+                       IsVerified = c.Boolean(),
+                   })
+                   .PrimaryKey(t => t.UserId);
 
-            AddColumn("dbo.UserProfile", "Email", c=>c.String());
-            AddColumn("dbo.UserProfile", "IsVerified", c => c.Boolean());
+            //AddColumn("dbo.UserProfile", "Email", c=>c.String());
+            //AddColumn("dbo.UserProfile", "IsVerified", c => c.Boolean());
           
             
             CreateTable(
