@@ -1,6 +1,0 @@
-﻿@model List<QuestionsAndAnswers.Models.Question>
-
-@foreach (var item in Model)
-{
-    <li>@Html.ActionLink(item.Title, "GetQuestion", "Home", new { id = item.Id, info = System.Text.RegularExpressions.Regex.Replace(item.Title.Replace(" ", "-"), "[^\\p{L}0-9_-]", "") }, null) </li>
-}

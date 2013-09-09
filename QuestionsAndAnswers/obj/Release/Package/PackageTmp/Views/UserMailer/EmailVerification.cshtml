@@ -1,8 +1,0 @@
-﻿@using Mvc.Mailer
-<span>@Resources.Global.Hello</span> @ViewBag.User.UserName!<br />
-@Resources.Global.EmailVerificationMessage
-<a href="@Url.Abs(Url.Action("EmailVerification", "Home", new { id=ViewBag.User.UserId, token=ViewBag.Key }))">@Resources.Global.Verification</a>
-<br />
-<br />
-@Resources.Global.Thanks,
-@Resources.Global.PageTitle.
