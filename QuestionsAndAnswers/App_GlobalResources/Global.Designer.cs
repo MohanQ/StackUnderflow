@@ -709,7 +709,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Password has to contain at least {2} character..
+        ///   Looks up a localized string similar to Password has to contain at least {2} character(s)..
         /// </summary>
         internal static string NewPasswordLengthNotProper {
             get {
@@ -718,7 +718,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New question came for one of your subscripted tags. Here you can see the question:.
+        ///   Looks up a localized string similar to There is a new question for one of your subscripted tags. Here you are:.
         /// </summary>
         internal static string NewQuestionEmailMessage {
             get {
@@ -727,7 +727,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New question came for your subscripted tag.
+        ///   Looks up a localized string similar to There is a new question for your subscripted tag.
         /// </summary>
         internal static string NewQuestionSubject {
             get {
@@ -745,7 +745,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You haven&apos;t email address. You have to register email!.
+        ///   Looks up a localized string similar to We don&apos;t have your email address in our system. Please enter your email address..
         /// </summary>
         internal static string NoEmail {
             get {
@@ -754,7 +754,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There isn&apos;t email address yet.
+        ///   Looks up a localized string similar to We don&apos;t have your email address in our system..
         /// </summary>
         internal static string NotYetEmail {
             get {
@@ -763,7 +763,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You not subscribed for tags..
+        ///   Looks up a localized string similar to You have no subscribed tags..
         /// </summary>
         internal static string NotYetSubscribed {
             get {
@@ -835,7 +835,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to If you don’t already have an account, please register..
+        ///   Looks up a localized string similar to Register, if you don&apos;t have an account..
         /// </summary>
         internal static string PleaseRegisterToQuestion {
             get {
@@ -934,7 +934,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remember me?.
+        ///   Looks up a localized string similar to Remember me.
         /// </summary>
         internal static string RememberMe {
             get {
@@ -1033,7 +1033,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Separeted with commas.
+        ///   Looks up a localized string similar to Separeted by commas.
         /// </summary>
         internal static string SeparetedWithCommas {
             get {
@@ -1060,7 +1060,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The tag registration is success..
+        ///   Looks up a localized string similar to You have successfully subscribed to the tag..
         /// </summary>
         internal static string SubscribedSuccess {
             get {
@@ -1087,7 +1087,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Successful email verification.
+        ///   Looks up a localized string similar to Email verification was successful.
         /// </summary>
         internal static string SuccessfulEmailVerification {
             get {
@@ -1132,7 +1132,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You subscribe these tags:.
+        ///   Looks up a localized string similar to You have subscribed to these tags:.
         /// </summary>
         internal static string ThisSubscribeTags {
             get {
@@ -1159,7 +1159,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You have to give tags for a question..
+        ///   Looks up a localized string similar to You have to enter tags for a question..
         /// </summary>
         internal static string Tv1 {
             get {
@@ -1168,7 +1168,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You can give maximum 5 tags..
+        ///   Looks up a localized string similar to You can enter no more than 5 tags..
         /// </summary>
         internal static string Tv2 {
             get {
@@ -1177,7 +1177,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You have to give at most 25 charachter long tag..
+        ///   Looks up a localized string similar to The maximum length of a tag is 25 charachters..
         /// </summary>
         internal static string Tv3 {
             get {
@@ -1213,7 +1213,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Questions which answered by user..
+        ///   Looks up a localized string similar to Questions answered by user..
         /// </summary>
         internal static string UserAnsweredQuestions {
             get {
@@ -1285,7 +1285,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You already voted for this answer..
+        ///   Looks up a localized string similar to You have already voted for this answer..
         /// </summary>
         internal static string YouAlreadyVotedForThisAnswer {
             get {
@@ -1294,7 +1294,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You already voted for this question..
+        ///   Looks up a localized string similar to You have already voted for this question..
         /// </summary>
         internal static string YouAlreadyVotedForThisQuestion {
             get {
