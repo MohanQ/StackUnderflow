@@ -29,7 +29,11 @@ namespace QuestionsAndAnswers
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
             //This line is helping in CodeFirst Migration
-            Database.SetInitializer<QaAContext>(null);
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<QaAContext, QuestionsAndAnswers.Migrations.Configuration>());
+            using (var ctx = new QaAContext())
+            {
+                ctx.Database.Initialize(false);
+            }
 
             if(!WebSecurity.Initialized)
                 WebSecurity.InitializeDatabaseConnection("QaAContext", "UserProfile", "UserId", "UserName", true);
