@@ -79,7 +79,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The all subscribed tags...
+        ///   Looks up a localized string similar to All subscribed tags...
         /// </summary>
         internal static string AllSubscribedTags {
             get {
@@ -142,7 +142,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BackToHomePage.
+        ///   Looks up a localized string similar to Back To Home Page.
         /// </summary>
         internal static string BackToHomePage {
             get {
@@ -151,7 +151,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You can subscribe with &quot;*&quot; charachter for more tags.  &lt;!br&gt; As follows: &lt;br/&gt;1. sql* &lt;br/&gt; 2. *sql &lt;br/&gt; 3. *sql*.
+        ///   Looks up a localized string similar to You can subscribe to similar tags by using &quot;*&quot; charachter  &lt;br/&gt; for example: &lt;br/&gt;1. sql* &lt;br/&gt; 2. *sql &lt;br/&gt; 3. *sql*.
         /// </summary>
         internal static string BubbleForTagsSubscribe {
             get {
@@ -160,7 +160,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change email.
+        ///   Looks up a localized string similar to Change email address.
         /// </summary>
         internal static string ChangeEmail {
             get {
@@ -169,7 +169,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change email or add new email.
+        ///   Looks up a localized string similar to Change or add new email address.
         /// </summary>
         internal static string ChangeEmailOrAddNewEmail {
             get {
@@ -196,7 +196,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Check the tags or check the login!.
+        ///   Looks up a localized string similar to Please check that the tag exists.
         /// </summary>
         internal static string CheckSubscribe {
             get {
@@ -205,7 +205,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Jelszó megerősítése.
+        ///   Looks up a localized string similar to Confirm Password.
         /// </summary>
         internal static string ConfirmPassword {
             get {
@@ -214,7 +214,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Confirm password not equal to new password..
+        ///   Looks up a localized string similar to The two passwords does not match..
         /// </summary>
         internal static string ConfirmPasswordNotEqualToNewPassword {
             get {
@@ -250,7 +250,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create new profile.
+        ///   Looks up a localized string similar to Create New Profile.
         /// </summary>
         internal static string CreateNewProfile {
             get {
@@ -286,7 +286,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit an answer.
+        ///   Looks up a localized string similar to Edit Answer.
         /// </summary>
         internal static string EditAnswer {
             get {
@@ -295,7 +295,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit email.
+        ///   Looks up a localized string similar to Edit Email.
         /// </summary>
         internal static string EditEmail {
             get {
@@ -304,7 +304,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit my profile.
+        ///   Looks up a localized string similar to Edit My Profile.
         /// </summary>
         internal static string EditMyProfile {
             get {
@@ -313,7 +313,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit a question.
+        ///   Looks up a localized string similar to Edit Question.
         /// </summary>
         internal static string EditQuestion {
             get {
@@ -331,7 +331,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email has sent.
+        ///   Looks up a localized string similar to Email message has been sent..
         /// </summary>
         internal static string EmailHasSent {
             get {
@@ -340,7 +340,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We have sent the email to your email address. To verify your address, please look the message..
+        ///   Looks up a localized string similar to We have sent the email to your email address. To verify your address, please click on the link in the message..
         /// </summary>
         internal static string EmailHasSentVerifyYourAddress {
             get {
@@ -349,7 +349,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The email is not valid..
+        ///   Looks up a localized string similar to The email address is not valid..
         /// </summary>
         internal static string EmailNotValid {
             get {
@@ -367,7 +367,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email setting.
+        ///   Looks up a localized string similar to Email Setting.
         /// </summary>
         internal static string EmailSetting {
             get {
@@ -376,7 +376,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Somebody gave your email address to our website. If it was you, please click the following url:.
+        ///   Looks up a localized string similar to Your email address has been registered to our website. Please click the following link to validate your address:.
         /// </summary>
         internal static string EmailVerificationMessage {
             get {
@@ -466,7 +466,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unfortunately we can not process your answer. You may use unsupported email provider or you may have delete the id from the subject..
+        ///   Looks up a localized string similar to Unfortunately we can not process your answer. You may use unsupported email provider or you may have deleted the id from the subject..
         /// </summary>
         internal static string FailedAnswerMessage {
             get {
@@ -520,7 +520,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The all subscribed tags of the user:.
+        ///   Looks up a localized string similar to Subscribed tags of the user:.
         /// </summary>
         internal static string GetAllTagToOneUserHead {
             get {
@@ -529,7 +529,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The following tags subscribed users:.
+        ///   Looks up a localized string similar to The following tags has been subscribed by users:.
         /// </summary>
         internal static string GetSubUserHead {
             get {
@@ -574,7 +574,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incorrect password or incorrect new password has typed..
+        ///   Looks up a localized string similar to Incorrect password or incorrect new password has been typed..
         /// </summary>
         internal static string IncorrectCurrentPasswordOrIncorrectNewPasswordHasTyped {
             get {

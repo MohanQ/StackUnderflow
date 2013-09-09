@@ -142,7 +142,7 @@
     <value>Asked</value>
   </data>
   <data name="BackToHomePage" xml:space="preserve">
-    <value>BackToHomePage</value>
+    <value>Back To Home Page</value>
   </data>
   <data name="ChangePassword" xml:space="preserve">
     <value>Change Password</value>
@@ -160,7 +160,7 @@
     <value>Content</value>
   </data>
   <data name="CreateNewProfile" xml:space="preserve">
-    <value>Create new profile</value>
+    <value>Create New Profile</value>
   </data>
   <data name="CreateQuestion" xml:space="preserve">
     <value>Ask a question</value>
@@ -169,13 +169,13 @@
     <value>Edit</value>
   </data>
   <data name="EditAnswer" xml:space="preserve">
-    <value>Edit an answer</value>
+    <value>Edit Answer</value>
   </data>
   <data name="EditMyProfile" xml:space="preserve">
-    <value>Edit my profile</value>
+    <value>Edit My Profile</value>
   </data>
   <data name="EditQuestion" xml:space="preserve">
-    <value>Edit a question</value>
+    <value>Edit Question</value>
   </data>
   <data name="ExternalLogin" xml:space="preserve">
     <value>External login</value>
@@ -361,7 +361,7 @@
     <value>Given username or password is incorrect.</value>
   </data>
   <data name="IncorrectCurrentPasswordOrIncorrectNewPasswordHasTyped" xml:space="preserve">
-    <value>Incorrect password or incorrect new password has typed.</value>
+    <value>Incorrect password or incorrect new password has been typed.</value>
   </data>
   <data name="RememberMe" xml:space="preserve">
     <value>Remember me?</value>
@@ -376,10 +376,10 @@
     <value>Your password has setted.</value>
   </data>
   <data name="ConfirmPassword" xml:space="preserve">
-    <value>Jelszó megerősítése</value>
+    <value>Confirm Password</value>
   </data>
   <data name="ConfirmPasswordNotEqualToNewPassword" xml:space="preserve">
-    <value>Confirm password not equal to new password.</value>
+    <value>The two passwords does not match.</value>
   </data>
   <data name="FailedRegistration" xml:space="preserve">
     <value>Failed registration happened.</value>
@@ -427,13 +427,13 @@
     <value>New answer arrived, click here to show this!</value>
   </data>
   <data name="AllSubscribedTags" xml:space="preserve">
-    <value>The all subscribed tags..</value>
+    <value>All subscribed tags..</value>
   </data>
   <data name="GetAllTagToOneUserHead" xml:space="preserve">
-    <value>The all subscribed tags of the user:</value>
+    <value>Subscribed tags of the user:</value>
   </data>
   <data name="GetSubUserHead" xml:space="preserve">
-    <value>The following tags subscribed users:</value>
+    <value>The following tags has been subscribed by users:</value>
   </data>
   <data name="NotYetEmail" xml:space="preserve">
     <value>There isn't email address yet</value>
@@ -460,13 +460,13 @@
     <value>You have to give at most 25 charachter long tag.</value>
   </data>
   <data name="BubbleForTagsSubscribe" xml:space="preserve">
-    <value>You can subscribe with "*" charachter for more tags.  &lt;!br&gt; As follows: &lt;br/&gt;1. sql* &lt;br/&gt; 2. *sql &lt;br/&gt; 3. *sql*</value>
+    <value>You can subscribe to similar tags by using "*" charachter  &lt;br/&gt; for example: &lt;br/&gt;1. sql* &lt;br/&gt; 2. *sql &lt;br/&gt; 3. *sql*</value>
   </data>
   <data name="CheckSubscribe" xml:space="preserve">
-    <value>Check the tags or check the login!</value>
+    <value>Please check that the tag exists</value>
   </data>
   <data name="EmailNotValid" xml:space="preserve">
-    <value>The email is not valid.</value>
+    <value>The email address is not valid.</value>
   </data>
   <data name="ErrorInSubscribe" xml:space="preserve">
     <value>Sorry, an error occurred while processing.</value>
@@ -484,13 +484,13 @@
     <value>You subscribe these tags:</value>
   </data>
   <data name="EmailHasSent" xml:space="preserve">
-    <value>Email has sent</value>
+    <value>Email message has been sent.</value>
   </data>
   <data name="EmailHasSentVerifyYourAddress" xml:space="preserve">
-    <value>We have sent the email to your email address. To verify your address, please look the message.</value>
+    <value>We have sent the email to your email address. To verify your address, please click on the link in the message.</value>
   </data>
   <data name="EmailSetting" xml:space="preserve">
-    <value>Email setting</value>
+    <value>Email Setting</value>
   </data>
   <data name="EmailReg" xml:space="preserve">
     <value>Email Registration</value>
@@ -502,7 +502,7 @@
     <value>If you want to answer this question in email, you should reply to this email and write your answer into the reply.</value>
   </data>
   <data name="EmailVerificationMessage" xml:space="preserve">
-    <value>Somebody gave your email address to our website. If it was you, please click the following url:</value>
+    <value>Your email address has been registered to our website. Please click the following link to validate your address:</value>
   </data>
   <data name="Hello" xml:space="preserve">
     <value>Hello</value>
@@ -532,7 +532,7 @@
     <value>Verification</value>
   </data>
   <data name="ChangeEmail" xml:space="preserve">
-    <value>Change email</value>
+    <value>Change email address</value>
   </data>
   <data name="EmailVerifySubject" xml:space="preserve">
     <value>Please, verify your email adress</value>
@@ -541,7 +541,7 @@
     <value>We are sorry for the inconveniences</value>
   </data>
   <data name="FailedAnswerMessage" xml:space="preserve">
-    <value>Unfortunately we can not process your answer. You may use unsupported email provider or you may have delete the id from the subject.</value>
+    <value>Unfortunately we can not process your answer. You may use unsupported email provider or you may have deleted the id from the subject.</value>
   </data>
   <data name="FailedEmailReply" xml:space="preserve">
     <value>Failed email reply</value>
@@ -568,9 +568,9 @@
     <value>An error occurred while processing your request.</value>
   </data>
   <data name="ChangeEmailOrAddNewEmail" xml:space="preserve">
-    <value>Change email or add new email</value>
+    <value>Change or add new email address</value>
   </data>
   <data name="EditEmail" xml:space="preserve">
-    <value>Edit email</value>
+    <value>Edit Email</value>
   </data>
 </root>
