@@ -11,13 +11,14 @@
 </div>
 
 
+@*
+Discomment this section when using external authentication services. You need to configure them in AuthConfig.cs
 <section class="social" id="socialLoginForm">
     <h3>@Resources.Global.ExternalLogin</h3>
     @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
-</section>
+</section>*@
 
 <section id="loginForm">
-    <h3>@Resources.Global.LoginWithLocalProfile</h3>
     @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
     {
         @Html.AntiForgeryToken()
