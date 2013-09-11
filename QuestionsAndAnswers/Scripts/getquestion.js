@@ -149,33 +149,32 @@ $(function () {
         $(".alert").hide();
     });
 
-});
+    //CKEDITOR
+    window.onload = function () {
+        CKEDITOR.replace('answer_editor');
+        CKEDITOR.config.enterMode = CKEDITOR.ENTER_BR;
+    };
 
-
-//CKEDITOR
-window.onload = function () {
-    CKEDITOR.replace('answer_editor');
-    CKEDITOR.config.enterMode = CKEDITOR.ENTER_BR;
-};
-
-//Copy the content of hidden by validate
-$("#form_submit").click(function () {
-    var editor_data = CKEDITOR.instances.answer_editor.getData();
-    $("#ActualAnswer_Content").val(editor_data);
-}
-);
-
-//Enable hidden-validate
-$(function () {
-    //There are more form on the page (for edit button), then using document.forms.length-1
-    var validatorSettings = $.data($('form')[document.forms.length-1], 'validator').settings;
-    validatorSettings.ignore = "";
-
-    //Validate only be submitting
-    var validator = $("form").data("validator");
-    if (validator) {
-        validator.settings.onkeyup = false; // disable validation on keyup
-        validator.settings.onclick = false;
-        validator.settings.onfocusout = false;
+    //Copy the content of hidden by validate
+    $("#form_submit").click(function () {
+        var editor_data = CKEDITOR.instances.answer_editor.getData();
+        $("#ActualAnswer_Content").val(editor_data);
     }
+    );
+
+    //Enable hidden-validate
+    $(function () {
+        //There are more form on the page (for edit button), then using document.forms.length-1
+        var validatorSettings = $.data($('form')[document.forms.length - 1], 'validator').settings;
+        validatorSettings.ignore = "";
+
+        //Validate only be submitting
+        var validator = $("form").data("validator");
+        if (validator) {
+            validator.settings.onkeyup = false; // disable validation on keyup
+            validator.settings.onclick = false;
+            validator.settings.onfocusout = false;
+        }
+    });
 });
+

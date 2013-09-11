@@ -9,7 +9,8 @@ namespace QuestionsAndAnswers
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                 "~/Scripts/jquery-{version}.js",           // jQuery itself
+                "~/Scripts/jquery-migrate-{version}.js")); // jQuery migrate
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));

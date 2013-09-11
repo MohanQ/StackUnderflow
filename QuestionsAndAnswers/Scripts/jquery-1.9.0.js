@@ -1743,7 +1743,7 @@ jQuery.extend({
 	},
 
 	// A method for determining if a DOM node can handle the data expando
-	acceptData: function( elem ) {
+	acceptData: function (elem) {
 		var noData = elem.nodeName && jQuery.noData[ elem.nodeName.toLowerCase() ];
 
 		// nodes accept data unless otherwise specified; rejection can be conditional

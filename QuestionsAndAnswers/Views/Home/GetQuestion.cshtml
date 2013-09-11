@@ -108,9 +108,28 @@
     
     </div>
         @*  If the user is logged in, he can create an answer *@
-        @if (Request.IsAuthenticated)
-        {
-            using (Ajax.BeginForm("AddAnswer", "Home", new AjaxOptions { }, new { id = "formid" }))
+        @if(Request.IsAuthenticated){
+            using (Ajax.BeginForm("AddAnswer", "Home", new AjaxOptions { }, new { id = "formid"}))
+            {
+    
+            <input type="hidden" name="questionID" value="@Model.CurrentQuestion.Id" />
+            
+            <br />
+            <h3>@Resources.Global.AnswerForm</h3>
+            <br />  
+            <div class="hidden">
+                @Html.TextAreaFor(x => x.ActualAnswer.Content)
+
+            </div>
+            <textarea id="answer_editor"></textarea>              
+            
+            <br />
+            @Html.ValidationMessageFor(x => x.ActualAnswer.Content)
+            <br />
+            <input type="submit" id="form_submit" value="OK" class="btn" />
+            }
+        } else {
+             using (Ajax.BeginForm("AddAnswer", "Home", new AjaxOptions { }, new { id = "formid", hidden=""}))
             {
     
             <input type="hidden" name="questionID" value="@Model.CurrentQuestion.Id" />
@@ -145,8 +164,6 @@
 
 
 
-@section scripts{
-    @Scripts.Render("~/Scripts/tiny_mce/tiny_mce.js")
+@section Scripts{
     @Scripts.Render("~/Scripts/getquestion.js")
-
 }
